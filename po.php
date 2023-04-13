@@ -9,8 +9,8 @@ if (isset($_POST['send'])) {
 		$fet=mysqli_fetch_array($sel);
 		$aa=$fet['phone'];
 		$bb=$fet['pass'];
-		$_SESSION['tel']=$aa;
-		$_SESSION['pass']=$bb;
+		//$_SESSION['tel']=$aa;
+		//$_SESSION['pass']=$bb;
 		if ($aa==$a && $bb==$b) {
 			header("location:home.php");
 		}
